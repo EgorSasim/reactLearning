@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+       const user = {
+            id          : 3,
+            age         : 25,
+            firstName   : "Misha",
+            lastName    : "Laputi",
+            getFullName : function() {
+                return this.firstName + " " +  this.lastName;
+            },
+       };
+
+       const styleObj = {
+            fontSize: "20px",
+            color: "green",
+            textDecoration: "underline",
+       }
+       
+       ReactDOM
+            .createRoot(document.querySelector(".app"))
+            .render(
+               <div id={user.id}>
+                    <p>Full name: {user.getFullName()}</p>
+                    <p style={styleObj}>Age: {user.age}</p>
+                    <p>Time of generating data: {new Date().toLocaleTimeString()}</p>
+                </div>
+            )
+    </script>
+</body>
+</html>
