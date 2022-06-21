@@ -5,7 +5,5 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <div>
-        My First React App
-    </div>
+    <App/>,    
 );
