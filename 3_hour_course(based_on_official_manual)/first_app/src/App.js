@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Counter from "./components/Counter";
+import PostItem from "./components/PostItem";
+import './styles/App.css';
 
 function App() {
   
@@ -8,9 +9,18 @@ function App() {
 
   return (
     <div className="App">
-        <Counter/>
-        <h1>{value}</h1>
-        <input onChange={(event) => {setValue(event.target.value)}} type={"text"} value={value}></input>
+        <PostItem post={{
+            id: 1, 
+            title: "Javascript",
+            content: "Javascript is a programming language",
+        }}/>
+
+        <PostItem post={{
+            id: 2, 
+            title: "HTML",
+            content: "HTML is a hypertext markup language",
+        }}/>
+      
     </div>
   );
 }
