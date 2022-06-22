@@ -55,3 +55,9 @@ h1{
 .post__btns:active {
     box-shadow: none;
 }
+
+
+.btnCreatePost {
+    border: 1px solid black;
+    background: white;
+}
