@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import PostItem from "./components/PostItem";
 import PostList from "./components/PostList";
 import MyButton from "./components/UI/button/MyButton";
@@ -27,12 +27,16 @@ function App() {
         },        
     ])
 
-    const [title, setTitle] = useState('');
+    const [post, setPost] = useState({title: '', body: ''});
     
     
     const addNewPost = (e) => {
         e.preventDefault();
-        console.log(title);
+        const newPost = {
+            id: Date.now(),
+        }
+        setPosts([...posts, {...post, id: Date.now()}]);
+        setPost({title:'', body:''});
     }
 
     return (
@@ -41,10 +45,15 @@ function App() {
         <MyInput 
             type="text" 
             placeholder="Post name"
-            value={title}
-            onChange={ e => setTitle(e.target.value)}
+            value={post.title}
+            onChange={ e => setPost({...post, title: e.target.value})}
         />
-        <MyInput type="text" placeholder="Post description"/>
+        <MyInput 
+            value={post.content}
+            type="text" 
+            placeholder="Post description"
+            onChange={ e => setPost({...post, content: e.target.value})}
+            />
         
         <MyButton onClick={addNewPost}>Create Post</MyButton>
         </form>
