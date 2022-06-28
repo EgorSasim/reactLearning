@@ -27,12 +27,17 @@ li {
 .navBar {
     display: flex;
     justify-content:space-between ;
+    align-items: center;
 }
 
 .navBar > ul {
     display: flex;
-    margin-top: 35px;
+
     list-style-type: none;
+
+}
+
+.navBar > ul > li  {
+    padding: 10px;
     cursor: pointer;
-    margin: 35px 10px 0;
 }
