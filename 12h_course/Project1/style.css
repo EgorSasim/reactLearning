@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+li {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navBar {
+    display: flex;
+    justify-content:space-between ;
+}
+
+.navBar > ul {
+    display: flex;
+    margin-top: 35px;
+    list-style-type: none;
+    cursor: pointer;
+    margin: 35px 10px 0;
+}
