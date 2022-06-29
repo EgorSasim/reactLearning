@@ -46,7 +46,7 @@ h1 {
 
 ul {
     display: block;
-    list-style: none;
+    /* list-style: none; */
     color: white;
     margin-left: 70px;
     margin-top: 50px;
@@ -57,7 +57,12 @@ li {
     margin: 20px;
 }
 
+li::marker{
+    color: #64E2EE;
+    font-size: 1.3em;
+}
+/* 
 li::before{
     content: "\2022";
-    color: #64E2EE;
-}
+   
+} */
