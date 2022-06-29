@@ -1,3 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+body {
+    background-color: #23272C;
+} */
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 250px;
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 50px;
+}
+
+.react_facts{
+    color: #74DBEA;
+    font-size: 40px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.project_number {
+    color: white;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
 h1 {
-    text-align: center;
+    display: block;
+    font-size: 50px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+ul {
+    display: block;
+    list-style: none;
+    color: white;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+li {
+    margin: 20px;
+}
+
+li::before{
+    content: "\2022";
+    color: #64E2EE;
 }
