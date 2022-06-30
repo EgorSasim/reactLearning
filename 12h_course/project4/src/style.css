@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EECDE6;
+}
+
+.app {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);                
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.brand-name {
+    font-size: 25px;
+    color: #b47;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+.gallery {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery > img {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.description {
+    margin: 20px 0 0 40px; 
+}
+
+h1 {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.description > p {
+    opacity: 0.5;
+}
