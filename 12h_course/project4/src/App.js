@@ -5,7 +5,7 @@ import Cards_data from "./components/Cards_data";
 
 const App = () => {
   let cards = Cards_data.map( (card) => {
-    return <Card img={card.img.toString() } state={card.state} stars={card.stars} workDesc={card.workDesc} price={card.price} who={card.who}/>;
+    return <Card img={card.img} state={card.state} stars={card.stars} workDesc={card.workDesc} price={card.price} who={card.who}/>;
   })
   console.log(cards);
   return (
